@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<title> Φόρμα Αξιολόγησης </title>
+<link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/el/3/30/UNIPI_%28logo%29.png">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1> <u> Φόρμα Αξιολόγησης </u></h1>
+<p id="ann"> Με αφορμή την κυκλοφορία του νέου άλμπουμ του Immune ο χρήστης καλείται να το αξιολογήσει στην παρακάτω φόρμα. </p>
+<p id="google"> Άμα δεν το έχετε ακούσει αναζητήστε το εδώ <input type="search" name="google" placeholder="Αναζήτηση..."> ή εδώ (με url) <input type="url" placeholder="Αναζήτηση..."></p>
+<form id="blue">
+<input type="text" placeholder="Εργασία από τον φοιτητή με AM Π21138" hidden>
+ <h2><u>Βασικά στοιχεία του χρήστη</u> <text class="red1"> * </text> 
+<text class="hide"> Τα στοιχεία με "*" ειναι απαραίτητα </text></h2>
+<img id="out" src="https://images.genius.com/d0106ecbf4e2801b2b6e2e3988963401.1000x563x1.jpg">
+<br>&nbsp;&nbsp;Όνομα:&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="ονομα" &nbsp;&nbsp; placeholder="Πληκτρολογήστε το όνομα σας" size="22" onkeypress="return /[α-ω,a-z]/i.test(event.key)"required> <text class="red">*  </text> <br>
+&nbsp;&nbsp;Επώνυμο: <input type="text" name="επιθετο" placeholder="Πληκτρολογήστε το επίθετο σας" size="25" onkeypress="return /[α-ω,a-z]/i.test(event.key)"required> <text class="red">*  </text><br>
+&nbsp Διεύθυνση:<input type="text" name="Διεύθυνση" placeholder="Πληκτρολογήστε την διεύθυνση σας" size="30" required> <text class="red">*  </text><br>
+&nbsp;&nbsp;T.K.: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="ταχυδρομικός κώδικας" placeholder="Πληκρτολογήστε το T.K σας" maxlength="5" onkeypress="return /[0-9]/i.test(event.key)" required> <text class="red">*  </text><br>
+&nbsp;&nbsp;Φύλο:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="gender"><option selected="true" disabled="disabled">Επιλογή</option><option>Άντρας </option><option> Γυναίκα</option> <option> Άλλο/Προτιμώ να μην πω </option> </select> <text class="red">*  </text><br>
+&nbsp;&nbsp;Ηλικία: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="ταχυδρομικός κώδικας" placeholder="Πληκρτολογήστε την ηλικία σας" size="23" onkeypress="return /[0-9]/i.test(event.key)" maxlength="3" required> <text class="red">*  </text><br>
+
+<fieldset><legend> Αξιολόγηση του Άλμπουμ </legend>
+Πότε ακούσατε το άλμπουμ; <input type="date" name="date"> <br>
+'Ωρα και ημερομηνία που συμπληρώνετε την φόρμα: <input type="datetime-local" name="hour"><br>
+Πόσες φορές το έχετε ακούσει;<input type="number"><br>
+Πόσο σας άρεσε το άλμπουμ γενικότερα;<input type="range" name="satisfaction"><br>
+Ποιο είναι το αγαπημένο σας τραγολυδι απο το άλμπουμ;
+<label><input type="radio" name="song" value="Funeral"> Funeral</label>
+<label><input type="radio" name="song" value="God's Gift"> God's Gift</label>
+<center<label><input type="radio" name="song" value="Inception"> Inception</label>
+<label><input type="radio" name="song" value="Level Up"> Level Up</label>
+<label><input type="radio" name="song" value="Άλλο"> Άλλο</label><br>
+Ποιο/α χαρακτηριστικά του άλμπουμ εκτιμήσατε περισσότερο; <label> <input type="checkbox" name="prop"> Την μουσική</label>
+<label> <input type="checkbox" name="prop"> Τα κομμάτια</label>
+<label> <input type="checkbox" name="prop"> Τις φωνητικες ικανότητες του τραγουδιστή</label>
+<label> <input type="checkbox" name="prop"> Την μελωδία</label><br>
+<center> <textarea name="comments" cols="40" rows="5" placeholder="Τυχόν σχόλια για το άλμπουμ"></textarea></center>
+
+</fieldset>
+<fieldset><legend><b> Στοιχεία επικοινωνίας</b> </legend>
+Email:<input type="email" name="email adress"><br>
+Τηλέφωνο:<input type="tel">
+<input id="b1" type="submit" value="Αποστολή στοιχείων">&nbsp;&nbsp;
+<input id="b2" type="reset" value="Εκκαθάριση">
+</fieldset>
+</form>
+<form id="last">
+Εάν θέλετε να εγγραφείτε για να λαμβάνετε μέρος σε περισσότερες φόρμες απαντήσεων μπορείτε να το κάνετε παρακάτω:<br>
+Username: <input type="text" name="username" required> <text class="red1"> * </text><br>
+Password: &nbsp;<input type="password" name="pass" required> <text class="red1"> * </text><br>
+<input id="b3" type="submit" value="Δημιουργία χρήστη"><br><br>
+<img src="https://qph.fs.quoracdn.net/main-qimg-baaff0f32b56c31e468e6173813530ab" style="height:40px;width:100px"><br>
+<input placeholder="Fill in the CAPTCHA" type="text" maxlength="5" name="captcha"> <button> Submit</button>
+</form>
+<form>
+<b>Εάν θέλετε να προτείνετε κάποιο άλλο τραγούδι μπορείτε να το ανεβάσετε ηλεκτρονικα εδω:</b>
+<input type="file" name="imagefile"
+accept="audio/mp3, audio/mp3" > 
+<input type="submit" value="Μεταφόρτωση" style="background-color:#23AFB9">
+</form>
+</body>
+</html>

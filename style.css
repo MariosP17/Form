@@ -1,0 +1,59 @@
+body {
+	background-color:#8C999A;
+}
+h1 {
+ text-align: center;
+}
+#google {
+ text-align:center}
+h2 {
+	text-align:center;
+}
+#ann {
+	text-align:center;
+}
+#blue {
+	border:5px solid #44AAEF;
+	
+}
+.red1 {
+color:red;}
+.red {
+	color:red;
+
+}
+.hide {
+  display: none;
+  font-size:12px;
+}
+    
+.red1:hover + .hide {
+  display: block;
+  color: black;
+  margin-left:30%;
+  color:#AF2F37;
+ }
+#out {width: 200px;
+     height:111px;
+	float:right;
+	margin-right:3px;
+}
+#b1 {
+	text-align:center;
+ background-color:#F34A56;
+ margin-left:40%;
+
+ 
+}
+#b2 {
+	text-align:center;
+	background-color:#F34A56;
+}
+#b3 {
+	text-align:center;
+ background-color:#F34A56;
+
+ 
+}
+#last{
+text-align:center;}
